@@ -1,8 +1,8 @@
 var nome = prompt("Olá! Qual é o seu nome?")
-var notaPrimeiroBimestre = 1
-var notaSegundoBimestre = 5
-var notaTerceiroBimestre = 8
-var notaQuartoBimestre = 4
+var notaPrimeiroBimestre = Number.parseFloat(prompt("Digite a nota do Primeiro Bimestre"))
+var notaSegundoBimestre = Number.parseFloat(prompt("Digite a nota do Segundo Bimestre"))
+var notaTerceiroBimestre = Number.parseFloat(prompt("Digite a nota do Terceiro Bimestre"))
+var notaQuartoBimestre = Number.parseFloat(prompt("Digite a nota do Quarto Bimestre"))
 
 var notaFinal = ((notaPrimeiroBimestre + notaSegundoBimestre + notaTerceiroBimestre + notaQuartoBimestre) / 4)
 
@@ -13,5 +13,6 @@ if (notaFixada >= 6) {
 } else {
   alert(nome + ", você foi reprovado. Sua média é de " + notaFixada + ".")
 }
+
 
 
